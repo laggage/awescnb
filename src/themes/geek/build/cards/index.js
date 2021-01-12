@@ -26,12 +26,15 @@ function createCard(
         ? 'custom-card top'
         : 'custom-card'
 
+    const cardDescEl = document.createElement('div')
+    cardDescEl.classList.add('custom-card-desc')
+    cardDescEl.innerHTML = descText
     let el = `
         <div class="${cardClass}">
             <a href="${detailUrl}">
                <div class="custom-card-title">${title}</div>
             </a>
-            <div class="custom-card-desc">${descText}</div>
+            ${cardDescEl.outerHTML}
             <div class="custom-card-actions">
                 <div>
                     <li class="fas fa-eye"></li>

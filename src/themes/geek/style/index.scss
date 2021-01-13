@@ -282,6 +282,10 @@ body {
         color: var(--postDesc-color);
         text-align: center;
     }
+
+    img {
+        max-height: 50vh;
+    }
 }
 
 #post_detail,
